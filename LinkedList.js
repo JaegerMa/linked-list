@@ -164,6 +164,8 @@ class LinkedList
 			first.remove();
 		}
 
+		if(amount === 0)
+			return undefined;
 		if(amount === 1)
 			return shifted[0];
 
