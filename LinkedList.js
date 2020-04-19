@@ -141,7 +141,8 @@ class LinkedList
 			popped.push(last.value);
 		}
 
-
+		if(amount === 0)
+			return undefined;
 		if(amount === 1)
 			return popped[0];
 
