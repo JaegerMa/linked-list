@@ -242,6 +242,27 @@ class LinkedList
 		return reversed;
 	}
 
+	retain(filterFunction)
+	{
+		let current = this.first;
+		const last = this.last;
+
+		let idx = 0;
+		while(current)
+		{
+			const next = current.next;
+
+			if(!filterFunction(current.value, idx))
+				current.remove();
+
+			if(current === last)
+				break;
+
+			current = next;
+			++idx;
+		}
+	}
+
 
 	toArray()
 	{

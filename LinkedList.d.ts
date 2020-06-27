@@ -36,6 +36,7 @@ declare class LinkedList<V>
 	prependList(list: any): void;
 
 	reverse(): LinkedList<V>;
+	retain(filterFunction: (element: any, index: number) => boolean): void;
 	toArray(): V[];
 	clone(): LinkedList<V>;
 
