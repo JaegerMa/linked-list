@@ -1,6 +1,6 @@
 {
   "name": "linked-list",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Double linked list",
   "main": "LinkedList.js",
   "repository": "https://github.com/JaegerMa/linked-list",
